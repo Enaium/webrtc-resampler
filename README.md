@@ -4,7 +4,7 @@ A standalone extraction of the WebRTC resampler, taken from
 [`common_audio/resampler`](https://webrtc.googlesource.com/src/+/refs/heads/main/common_audio/resampler)
 and the signal processing subset it depends on.
 
-Extracted from WebRTC revision `3406fde1d1` (2026-11-17). Every extracted file
+Extracted from WebRTC revision `c25c6676c6` (2026-11-18). Every extracted file
 under `common_audio/` is byte identical to upstream; only `api/audio/audio_view.h`
 is adapted (see [Notes](#notes)).
 
