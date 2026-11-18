@@ -24,7 +24,7 @@ outputs = [".build/CMakeFiles/"]
 [feature.build.tasks.build]
 cmd = ["cmake", "--build", ".build"]
 depends-on = ["configure"]
-inputs = ["CMakeLists.txt", "src/*"]
+inputs = ["CMakeLists.txt", "src/**/*"]
 outputs = [
     ".build/*.dylib",
     ".build/*.dll",
@@ -45,7 +45,7 @@ outputs = [".build-tests/CMakeFiles/"]
 [feature.build.tasks.build-test]
 cmd = ["cmake", "--build", ".build-tests"]
 depends-on = ["configure-test"]
-inputs = ["CMakeLists.txt", "src/*", "tests/*"]
+inputs = ["CMakeLists.txt", "src/**/*", "tests/**/*"]
 outputs = [".build-tests/resampler_test"]
 
 [feature.build.tasks.run-test]
